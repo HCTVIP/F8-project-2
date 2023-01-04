@@ -574,7 +574,7 @@ a {
 }
 
 .blog-list .item {
-  width: calc(100% / 3 - 20px) ;
+  width: calc(100% / 3 - 20px);
   background: #ffffff;
   border-radius: 16px;
   flex-shrink: 0;
@@ -662,4 +662,78 @@ a {
 .blog .dot.active {
   cursor: default;
   background: var(--primary-color);
+}
+/* Footer */
+.footer {
+  background: #2e2100;
+  padding: 96px 135px 0;
+}
+
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .column {
+  width: calc(65% / 3);
+}
+
+.footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer .socials {
+  margin-top: 18px;
+  gap: 18px;
+  display: flex;
+}
+
+.footer .title {
+  display: inline-block;
+  padding: 0 48px 10px 0;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #ffffff;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .list {
+  margin-top: 28px;
+}
+
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.footer .list strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer .copyright {
+  padding: 28px 0;
+}
+
+.footer .copyright p {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  text-align: center;
+  color: #807d74;
 }
