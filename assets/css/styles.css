@@ -570,12 +570,14 @@ a {
   margin-top: 55px;
   display: flex;
   gap: 30px;
+  overflow: hidden;
 }
 
 .blog-list .item {
-  width: calc(100% / 3);
+  width: calc(100% / 3 - 20px) ;
   background: #ffffff;
   border-radius: 16px;
+  flex-shrink: 0;
 }
 
 .blog-list .item:hover {
@@ -640,5 +642,24 @@ a {
 
 .blog .item .btn {
   font-size: 1.4rem;
-  text-align: center;
+}
+
+.blog .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.blog .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blog .dot.active {
+  cursor: default;
+  background: var(--primary-color);
 }
